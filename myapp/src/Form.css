@@ -1,0 +1,145 @@
+form {
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 10px 0 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+}
+
+button {
+  width: 100%;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+select {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+@media (max-width: 600px) {
+  form {
+    margin: 20px;
+    padding: 16px;
+  }
+
+  input,
+  button {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .brand-track img {
+    height: 40px;
+    margin: 0 15px;
+  }
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.form-heading {
+  text-align: center;
+  padding: 40px 20px 20px;
+  background-color: #e7e7e7;
+  color: #333;
+}
+
+.form-heading h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #b48863; /* elegant gold tone */
+  font-family: 'Georgia', serif;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.form-heading p {
+  font-size: 16px;
+  color: #444;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+
+/* === BRAND LOGO SLIDER SECTION === */
+.brand-slider {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: 40px;
+  background-color: #fff8ef;
+  padding: 20px 0;
+  border-top: 1px solid #eee;
+}
+
+.brand-track {
+  display: inline-block;
+  animation: scroll-left 25s linear infinite;
+}
+
+.brand-track img {
+  height: 50px;
+  margin: 0 30px;
+  vertical-align: middle;
+  opacity: 0.8;
+  transition: transform 0.3s ease;
+}
+
+.brand-track img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
