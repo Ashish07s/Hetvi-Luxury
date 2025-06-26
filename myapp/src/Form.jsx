@@ -90,7 +90,7 @@ const Form = () => {
         </div>
 
         <div className="form-header">
-          <p>Fill the form and get our <span>Catalogue</span> instantly!</p>
+          <p>Fill the form and get our <span>Catalogue</span> instantly!</p> <br />
         </div>
 
         <input
