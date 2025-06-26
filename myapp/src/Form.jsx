@@ -55,12 +55,12 @@ const Form = () => {
 
       // ✅ Auto-download the specific PDF based on interest
       const pdfMap = {
-        Glasses: "glasses.pdf",
-        Picture: "picture.pdf",
-        Swarovaski: "swarovaski.pdf",
-        "X Rosanthal": "xrosanthal.pdf",
-        Vases: "vases.pdf",
-        "Dinner sets": "dinnersets.pdf",
+        Glasses: "2025 Glasses Catalogue.pdf",
+        Picture: "2025 Picture Frames.pdf",
+        Swarovaski: "2025 Swarovski x Rosenthal Catalogue.pdf",
+        "Tea set": "Tea Sets.pdf",
+        Vases: "2025 Vases catalogue All Brands.pdf",
+        "Dinner sets": "Dinner sets.pdf",
       };
 
       const selectedPdf = pdfMap[interest];
@@ -136,15 +136,15 @@ const Form = () => {
         >
           <option value="">-- Select Your Catalogue --</option>
           <option value="Glasses">Glasses</option>
-          <option value="Picture">Picture</option>
+          <option value="Picture">Picture Frames</option>
           <option value="Swarovaski">Swarovaski</option>
-          <option value="X Rosanthal">X Rosanthal</option>
+          <option value="X Rosanthal">Tea Sets</option>
           <option value="Vases">Vases</option>
           <option value="Dinner sets">Dinner sets</option>
         </select>
 
         <button type="submit" disabled={disable}>
-          {isSubmitting ? "Submitting..." : "Submit"}
+          {isSubmitting ? "Submitting..." : "Submit & Get Catalogue"}
         </button>
       </form>
 
